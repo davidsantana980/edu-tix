@@ -6,19 +6,6 @@ export default function TicsBasicos(){
         "\n" +
         "Su uso se ha incrementado exponencialmente con el tiempo, brindándonos servicios como el correo electrónico, la búsqueda y filtrado de información, descarga de materiales, comercio electrónico y mucho más.\n"
 
-    const blockQuote = () => {
-        return (
-            <>
-                <h2>Blockquotes</h2>
-                <p>This is an example blockquote in action:</p>
-                <blockquote className="blockquote">
-                    <p>Quoted text goes here.</p>
-                </blockquote>
-            </>
-        )
-    }
-
-
     const postContent = (
         <div>
             <p>{firstParagraph}</p>

@@ -4,6 +4,7 @@ import Head from "next/head";
 import Navbar from "@/src/components/Navbar";
 import TicsBasicos from "./posts/tics-basicos";
 import TicsEducacion from "./posts/tics-educacion";
+import VentajasTics from "@/pages/posts/ventajas-tics";
 
 export default function Home() {
     const Header = () => {
@@ -123,6 +124,9 @@ export default function Home() {
 
                       <TicsEducacion />
 
+                      <hr/>
+
+                      <VentajasTics/>
                   </div>
 
                   <div className="col-md-4">
