@@ -1,7 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import "@/styles/globals.css";
+import "../styles/globals.css";
+
 import "../styles/blog/blog.css";
 import "../styles/blog/headers.css";
+
+import "../styles/blog/index/carousel.css";
 
 import { useEffect } from "react";
 

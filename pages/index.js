@@ -1,56 +1,63 @@
 import Link from "next/link";
-import {Container} from "react-bootstrap";
+import Carousel from "@/src/components/index/Carousel";
 import Head from "next/head";
-import Navbar from "@/src/components/Navbar";
+
 import TicsBasicos from "./posts/tics-basicos";
 import TicsEducacion from "./posts/tics-educacion";
 import VentajasTics from "@/pages/posts/ventajas-tics";
-import Footer from "@/src/components/Footer";
+
+function Sidebar() {
+    return (
+        <div className="position-sticky" style={{top: "5rem"}}>
+            <div className="p-4 mb-3 bg-light rounded">
+                <h4 className="fst-italic">¡Bienvenido/a!</h4>
+                <p className="mb-0">
+                    En este espacio, exploraremos cómo las TIC están transformando la forma en que enseñamos y aprendemos.
+                    Acompáñanos mientras exploramos las últimas tendencias, mejores prácticas y casos de estudio inspiradores que demuestran el impacto positivo de la tecnología en el proceso educativo. ¡Prepárate para descubrir cómo las TIC están abriendo nuevas puertas hacia un aprendizaje más accesible, personalizado e innovador!
+                </p>
+            </div>
+
+            <div className="p-4">
+                <h4 className="fst-italic">Contacto</h4>
+                <ol className="list-unstyled">
+                    <li><Link href="#">GitHub</Link></li>
+                    <li><Link href="#">Twitter</Link></li>
+                    <li><Link href="#">Facebook</Link></li>
+                </ol>
+            </div>
+        </div>
+    );
+}
+
+function Hero(){
+    const title = "Tecnologías de la Información y la Comunicación: "
+    const lede = "Un mundo de posibilidades educativas a tu alcance."
+
+    return (
+        <div className="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+            <div className="col-md-6 px-0">
+                <h1 className="display-4 fst-italic">{title}</h1>
+                <p className="lead my-3">{lede}</p>
+                {/*<p className="lead mb-0"><Link href="#" className="text-white fw-bold">Continue reading...</Link></p>*/}
+            </div>
+        </div>
+    )
+}
 
 export default function Home() {
-
-    const Hero = () => {
-        const title = "Tecnologías de la Información y la Comunicación: "
-        const lede = "Un mundo de posibilidades educativas a tu alcance."
-
-        return (
-            <div className="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-                <div className="col-md-6 px-0">
-                    <h1 className="display-4 fst-italic">{title}</h1>
-                    <p className="lead my-3">{lede}</p>
-                    {/*<p className="lead mb-0"><Link href="#" className="text-white fw-bold">Continue reading...</Link></p>*/}
-                </div>
-            </div>
-        )
-    }
-
     return (
       <>
           <Head>
               <meta charSet="utf-8"/>
               <meta name="viewport" content="width=device-width, initial-scale=1"/>
               <title>Edu-tix, las TIC y la educación</title>
+         </Head>
 
-
-                          {/*<style>s*/}
-                          {/*    .bd-placeholder-img {*/}
-                          {/*        font-size: 1.125rem;*/}
-                          {/*        textAnchor: middle;*/}
-                          {/*        -webkit-user-select: none;*/}
-                          {/*        -moz-user-select: none;*/}
-                          {/*        user-select: none;*/}
-                          {/*    }*/}
-
-                          {/*    @media (min-width: 768px) {*/}
-                          {/*        .bd-placeholder-img-lg {*/}
-                          {/*            font-size: 3.5rem;*/}
-                          {/*        }*/}
-                          {/*    }*/}
-                          {/*</style>*/}
-              </Head>
+          <Carousel/>
 
           <main className="container">
-              <Hero/>
+              {/*<Hero/>*/}
+
               {/*<div className="row mb-2">*/}
               {/*    <div className="col-md-6">*/}
               {/*        <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">*/}
@@ -102,27 +109,7 @@ export default function Home() {
                   </div>
 
                   <div className="col-md-4">
-                      <div className="position-sticky" style={{top: "5rem"}}>
-                          <div className="p-4 mb-3 bg-light rounded">
-                              <h4 className="fst-italic">Bienvenido</h4>
-                              <p className="mb-0">
-                                  ¡Bienvenido/a!
-
-                                  En este espacio, exploraremos cómo las TIC están transformando la forma en que enseñamos y aprendemos.
-                                  Acompáñanos mientras exploramos las últimas tendencias, mejores prácticas y casos de estudio inspiradores que demuestran el impacto positivo de la tecnología en el proceso educativo. ¡Prepárate para descubrir cómo las TIC están abriendo nuevas puertas hacia un aprendizaje más accesible, personalizado e innovador!
-
-                              </p>
-                          </div>
-
-                          <div className="p-4">
-                              <h4 className="fst-italic">Contacto</h4>
-                              <ol className="list-unstyled">
-                                  <li><Link href="#">GitHub</Link></li>
-                                  <li><Link href="#">Twitter</Link></li>
-                                  <li><Link href="#">Facebook</Link></li>
-                              </ol>
-                          </div>
-                      </div>
+                      <Sidebar />
                   </div>
               </div>
           </main>
