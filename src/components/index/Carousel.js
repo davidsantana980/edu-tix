@@ -19,6 +19,8 @@ export default function Carousel(){
                         <div className="carousel-caption text-start">
                             <h1>Tecnologías de la Información y la Comunicación:</h1>
                             <p>Un mundo de posibilidades educativas a tu alcance.</p>
+
+                            <p><Link className="btn text-decoration-none text-light btn-lg" style={{backgroundColor : "transparent" }} href="#contenido">Lee lo último</Link></p>
                         </div>
                     </div>
                 </div>
@@ -30,7 +32,7 @@ export default function Carousel(){
                         <div className="carousel-caption">
                             <h1>Fundamentos de las TIC</h1>
                             <p>¿Qué son? ¿Para qué sirven?</p>
-                            <p><Link className="btn btn-lg btn-dark" href="#">Lee el post</Link></p>
+                            <p><Link className="btn text-decoration-none text-light btn-lg" style={{backgroundColor : "transparent" }} href="/posts/tics-basicos">Lee el post</Link></p>
                         </div>
                     </div>
                 </div>
@@ -42,7 +44,7 @@ export default function Carousel(){
                         <div className="carousel-caption">
                             <h1>Las TIC en la educación</h1>
                             <p>Descubre cómo las TIC están cambiando la educación en la actualidad.</p>
-                            <p><Link className="btn btn-lg btn-dark" href="#">Lee el post</Link></p>
+                            <p><Link className="btn text-decoration-none text-light btn-lg" style={{backgroundColor : "transparent" }} href="/posts/tics-educacion">Lee el post</Link></p>
                         </div>
                     </div>
                 </div>
@@ -54,7 +56,7 @@ export default function Carousel(){
                         <div className="carousel-caption text-end">
                             <h1>Ventajas de las TIC</h1>
                             <p>¿Ya las conoces?</p>
-                            <p><Link className="btn btn-lg btn-dark" href="#">Lee el post</Link></p>
+                            <p><Link className="btn text-decoration-none text-light btn-lg" style={{backgroundColor : "transparent" }} href="/posts/ventajas-tics">Lee el post</Link></p>
                         </div>
                     </div>
                 </div>

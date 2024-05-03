@@ -35,3 +35,7 @@ img {
     max-width: 100%;
     display: block;
 }
+
+.fading {
+    -webkit-mask-image: linear-gradient(180deg, #000 15%, transparent);
+}

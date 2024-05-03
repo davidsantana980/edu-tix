@@ -7,12 +7,12 @@ export default function Navbar(){
                 <img className="bi me-2" height="55" src={"/logo.png"} style={{ marginLeft: '18px' }} />
             </Link>
 
-            <ul className="nav">
-                <li><Link href="#" className="text-black btn-light nav-link" aria-current="page"><strong>Home</strong></Link></li>
-                <li><Link href="#" className="text-black nav-link">Las TIC</Link></li>
-                <li><Link href="#" className="text-black nav-link">TIC y educación</Link></li>
-                <li><Link href="#" className="text-black nav-link">Ventajas de las TIC</Link></li>
-                <li><Link href="#" className="text-black nav-link">Sobre nosotros</Link></li>
+            <ul className="nav" style={{ marginRight: '14px' }}>
+                <li><Link href="/" className="text-black btn-light nav-link" aria-current="page"><strong>Home</strong></Link></li>
+                <li><Link href="/posts/tics-basicos" className="text-black nav-link">Las TIC</Link></li>
+                <li><Link href="/posts/tics-educacion" className="text-black nav-link">TIC y educación</Link></li>
+                <li><Link href="/posts/ventajas-tics" className="text-black nav-link">Ventajas de las TIC</Link></li>
+                <li><Link href="/about/sobre-nosotros" className="text-black nav-link">Sobre nosotros</Link></li>
             </ul>
         </nav>
 

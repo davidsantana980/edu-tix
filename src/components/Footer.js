@@ -4,7 +4,10 @@ export default function Footer(){
     return (
         <footer className="blog-footer">
             <p>
-                Hecho por Salvador Ochoa y Carlos Andrade, 2024
+                Por Salvador Ochoa, Carlos Andrade.
+                UPTLL Juana Ramírez.
+                Tutora: Ing. Clara Martínez.
+                2024.
             </p>
 
             <p>

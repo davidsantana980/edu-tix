@@ -5,6 +5,7 @@ export default function Post({title, date, author, content}){
         <article className="blog-post">
             <h2 className="blog-post-title">{title}</h2>
             <p className="blog-post-meta">{date} por {author}</p>
+            <hr/>
 
             {content}
         </article>

@@ -2,9 +2,9 @@ import Link from "next/link";
 import Carousel from "@/src/components/index/Carousel";
 import Head from "next/head";
 
-import TicsBasicos from "./posts/tics-basicos";
-import TicsEducacion from "./posts/tics-educacion";
-import VentajasTics from "@/pages/posts/ventajas-tics";
+import TicsBasicosJumbotron from "@/src/components/index/TicsBasicosJumbotron";
+import TicsEducacionJumbotron from "@/src/components/index/TicsEducacionJumbotron";
+import VentajasTicsJumbotron from "@/src/components/index/VentajasTicsJumbotron";
 
 function Sidebar() {
     return (
@@ -20,28 +20,12 @@ function Sidebar() {
             <div className="p-4">
                 <h4 className="fst-italic">Contacto</h4>
                 <ol className="list-unstyled">
-                    <li><Link href="#">GitHub</Link></li>
-                    <li><Link href="#">Twitter</Link></li>
-                    <li><Link href="#">Facebook</Link></li>
+                    <li>GitHub: <Link href={"https://github.com/davidsantana980"}>davidsantana980</Link>, <Link href={"https://github.com/Kaldumento"}>Kaldumento</Link></li>
+                    <li>E-mail: <Link href={"mailto:salvador8a980@gmail.com"}>salvador8a980@gmail.com</Link>, <Link href={"mailto:8ant@gmail.com"}>8ant@gmail.com</Link></li>
                 </ol>
             </div>
         </div>
     );
-}
-
-function Hero(){
-    const title = "Tecnologías de la Información y la Comunicación: "
-    const lede = "Un mundo de posibilidades educativas a tu alcance."
-
-    return (
-        <div className="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-            <div className="col-md-6 px-0">
-                <h1 className="display-4 fst-italic">{title}</h1>
-                <p className="lead my-3">{lede}</p>
-                {/*<p className="lead mb-0"><Link href="#" className="text-white fw-bold">Continue reading...</Link></p>*/}
-            </div>
-        </div>
-    )
 }
 
 export default function Home() {
@@ -56,56 +40,21 @@ export default function Home() {
           <Carousel/>
 
           <main className="container">
-              {/*<Hero/>*/}
-
-              {/*<div className="row mb-2">*/}
-              {/*    <div className="col-md-6">*/}
-              {/*        <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">*/}
-              {/*            <div className="col p-4 d-flex flex-column position-static">*/}
-              {/*                <strong className="d-inline-block mb-2 text-primary">World</strong>*/}
-              {/*                <h3 className="mb-0">Featured post</h3>*/}
-              {/*                <div className="mb-1 text-muted">Nov 12</div>*/}
-              {/*                <p className="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>*/}
-              {/*                <Link href="#" className="stretched-link">Continue reading</Link>*/}
-              {/*            </div>*/}
-              {/*            <div className="col-auto d-none d-lg-block">*/}
-              {/*                <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*/}
-
-              {/*            </div>*/}
-              {/*        </div>*/}
-              {/*    </div>*/}
-              {/*    <div className="col-md-6">*/}
-              {/*        <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">*/}
-              {/*            <div className="col p-4 d-flex flex-column position-static">*/}
-              {/*                <strong className="d-inline-block mb-2 text-success">Design</strong>*/}
-              {/*                <h3 className="mb-0">Post title</h3>*/}
-              {/*                <div className="mb-1 text-muted">Nov 11</div>*/}
-              {/*                <p className="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>*/}
-              {/*                <Link href="#" className="stretched-link">Continue reading</Link>*/}
-              {/*            </div>*/}
-              {/*            <div className="col-auto d-none d-lg-block">*/}
-              {/*                <svg className="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*/}
-
-              {/*            </div>*/}
-              {/*        </div>*/}
-              {/*    </div>*/}
-              {/*</div>*/}
-
-              <div className="row g-5">
+              <div id={"contenido"} className="row g-5">
                   <div className="col-md-8">
                       <h3 className="pb-4 mb-4 fst-italic border-bottom">
                           {"Lo último"}
                       </h3>
 
-                      <TicsBasicos />
+                      <TicsBasicosJumbotron />
 
                       <hr/>
 
-                      <TicsEducacion />
+                      <TicsEducacionJumbotron />
 
                       <hr/>
 
-                      <VentajasTics/>
+                      <VentajasTicsJumbotron/>
                   </div>
 
                   <div className="col-md-4">
