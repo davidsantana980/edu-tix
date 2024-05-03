@@ -9,6 +9,10 @@ export default function TicsBasicos(){
 
     const content = (
         <div>
+            <figure className="figure w-50 float-end">
+                <iframe className="img-fluid" width="600"  src="https://www.youtube.com/embed/_zmiz7ztrRQ" title="Qué son las TIC" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <figcaption className="figure-caption text-center">Un video introductorio hecho por la <strong>Fundación Mapfre</strong>.</figcaption>
+            </figure>
             <p>{firstParagraph}</p>
             {postContent}
         </div>

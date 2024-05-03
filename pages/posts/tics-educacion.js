@@ -10,6 +10,14 @@ export default function TicsEducacion(){
     const content = (
         <div>
             <p>{firstParagraph}</p>
+            <figure className="figure w-50 float-end m-3">
+                <img src={"/ventajastic.webp"} className="figure-img img-fluid rounded img-thumbnail" alt="Las TIC son el futuro." />
+            </figure>
+
+            <figure className="figure w-50 float-end m-3">
+                <img src={"/ictedu.jpg"} className="figure-img img-fluid rounded img-thumbnail" alt="Las TIC amplían el acceso a la información." />
+                <figcaption className="figure-caption text-center">Las TIC democratizan la educación.</figcaption>
+            </figure>
             {postContent}
         </div>
     )

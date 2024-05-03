@@ -13,7 +13,7 @@ export default function Carousel(){
 
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="/corporate_art.jpeg" alt="First slide"/>
+                    <img src="/itc2.jpg" alt="First slide"/>
 
                     <div className="container">
                         <div className="carousel-caption text-start">

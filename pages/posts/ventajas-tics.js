@@ -10,6 +10,10 @@ export default function VentajasTics() {
     const content = (
         <div>
             <p>{firstParagraph}</p>
+            <figure className="figure w-50 float-end m-3">
+                <img src={"/ticsedu.webp"} className="figure-img img-fluid rounded img-thumbnail" alt="Las TIC promueven la inclusión." />
+                <figcaption className="figure-caption text-center">Las TIC tienen el potencial de promover la inclusión.</figcaption>
+            </figure>
             {postContent}
         </div>
     );
@@ -24,7 +28,7 @@ export default function VentajasTics() {
             <PostLayout>
                 <Post
                     title={title}
-                    date="1/7/2024"
+                    date="1/5/2024"
                     author="Carlos Andrade, Salvador Ochoa"
                     content={content}
                 />
