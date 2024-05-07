@@ -18,7 +18,7 @@ export default function SobreNosotros(){
 
             <h2>Contacto</h2>
             <p>
-                A Carlos puedes contactarlo en Instagram como <Link href={"https://www.instagram.com/carlo.andradei/"}>@carlo.andradei</Link>, seguirlo en GitHub como <Link href={"https://github.com/Kaldumento"}>Kaldumento</Link> o mandarle un correo a <Link href={"mailto:8ant@gmail.com"}>8ant@gmail.com</Link>
+                A Carlos puedes contactarlo en Instagram como <Link href={"https://www.instagram.com/carlo.andradei/"}>@carlo.andradei</Link>, seguirlo en GitHub como <Link href={"https://github.com/Kaldumento"}>Kaldumento</Link> o mandarle un correo a <Link href={"mailto:cmaicorreo@gmail.com"}>cmaicorreo@gmail.com</Link>
             </p>
             <p>
                 A Salvador puedes contactarlo por su correo, <Link href={"mailto:salvador8a980@gmail.com"}>salvador8a980@gmail.com</Link> o seguirlo en GitHub como <Link href={"https://github.com/davidsantana980"}>davidsantana980</Link>
